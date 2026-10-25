@@ -1,0 +1,37 @@
+name: 커밋 현황 갱신
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 카드 만들기
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+          STATS_REPOS: ${{ secrets.STATS_REPOS }}
+        run: python3 .github/scripts/stats.py
+
+      - name: 바뀌었으면 올리기
+        run: |
+          if git diff --quiet -- stats.svg; then
+            echo "바뀐 커밋이 없어 그대로 둡니다"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats.svg
+          git commit -m "커밋 현황 갱신"
+          git push
