@@ -22,6 +22,7 @@ jobs:
         env:
           STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
           STATS_REPOS: ${{ secrets.STATS_REPOS }}
+          WEEK_START: sun
         run: python3 .github/scripts/stats.py
 
       - name: 바뀌었으면 올리기

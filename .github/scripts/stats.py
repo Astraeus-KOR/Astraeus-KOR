@@ -10,6 +10,10 @@ OUT = pathlib.Path(__file__).resolve().parents[2] / "stats.svg"
 KST = dt.timezone(dt.timedelta(hours=9))
 BANDS = [("Morning", 6, 14, "#F6E7C1"), ("Afternoon", 14, 22, "#E2C079"), ("Night", 22, 6, "#6F86C6")]
 INK, MUTED, FAINT, LINE = "#EEEAE0", "#9AA2B4", "#6E7891", "#24314F"
+WEEK_START = os.environ.get("WEEK_START", "sun").lower()
+ORDER = [6, 0, 1, 2, 3, 4, 5] if WEEK_START == "sun" else [0, 1, 2, 3, 4, 5, 6]
+LETTER = "MTWTFSS"
+DAY_COLOR = {5: "#7FA2E8", 6: "#E8877C"}
 
 
 def times_from_git(path):
@@ -40,15 +44,19 @@ def band_of(hour):
 
 def stats(times):
     times = [t.astimezone(KST) for t in times]
-    bands = [0] * len(BANDS)
+    bands, grid = [0] * len(BANDS), [[0] * 7 for _ in BANDS]
     for t in times:
-        bands[band_of(t.hour)] += 1
-    return {"total": len(times), "bands": bands, "last": max(times) if times else None}
+        b = band_of(t.hour)
+        bands[b] += 1
+        grid[b][t.weekday()] += 1
+    return {"total": len(times), "bands": bands, "grid": grid, "last": max(times) if times else None}
 
 
 def svg(rows):
     W, top, rh = 640, 104, 56
-    H = top + rh * len(rows) + 14
+    gy = top + rh * len(rows) + 22
+    CW, CH, G = 20, 18, 3
+    H = gy + 72 + 3 * (CH + G) + 20
     BX, BW = 214, 280
     latest = max((s["last"] for _, s in rows if s["last"]), default=None)
     stamp = f"as of {latest:%Y-%m-%d}" if latest else ""
@@ -86,6 +94,28 @@ def svg(rows):
             bx += w
         last = f'{s["last"]:%Y-%m-%d}' if s["last"] else "-"
         p.append(f'<text x="{W - 28}" y="{cy:.0f}" font-size="13" fill="{MUTED}" text-anchor="end" class="m">{last}</text>')
+    p.append(f'<line x1="28" y1="{gy - 8}" x2="{W - 28}" y2="{gy - 8}" stroke="{LINE}"/>')
+    p.append(f'<text x="28" y="{gy + 16}" font-size="13" font-weight="600" fill="{INK}">By day &amp; time</text>')
+    gy += 22
+    GX0, step = 96, 179
+    for b, (name, _, _, _) in enumerate(BANDS):
+        p.append(f'<text x="28" y="{gy + 50 + b * (CH + G) + 13}" font-size="10" fill="{MUTED}">{name}</text>')
+    peak = max(max(max(r) for r in s["grid"]) for _, s in rows) or 1
+    for i, (pname, s) in enumerate(rows):
+        gx = GX0 + i * step
+        p.append(f'<text x="{gx}" y="{gy + 18}" font-size="11" fill="{MUTED}" class="m">{pname}</text>')
+        for d, wd in enumerate(ORDER):
+            p.append(f'<text x="{gx + d * (CW + G) + CW / 2:.0f}" y="{gy + 42}" font-size="9" fill="{DAY_COLOR.get(wd, FAINT)}" text-anchor="middle" class="m">{LETTER[wd]}</text>')
+        for b, (_, _, _, color) in enumerate(BANDS):
+            ry = gy + 50 + b * (CH + G)
+            for d, wd in enumerate(ORDER):
+                n, x = s["grid"][b][wd], gx + d * (CW + G)
+                if n:
+                    p.append(f'<rect x="{x}" y="{ry}" width="{CW}" height="{CH}" rx="3" fill="{color}" fill-opacity="{0.15 + 0.85 * n / peak:.2f}"/>')
+                    ink = "#0E1629" if n / peak > .55 else INK
+                    p.append(f'<text x="{x + CW / 2:.0f}" y="{ry + 12.5:.1f}" font-size="9" fill="{ink}" text-anchor="middle">{n}</text>')
+                else:
+                    p.append(f'<rect x="{x + .5}" y="{ry + .5}" width="{CW - 1}" height="{CH - 1}" rx="3" fill="none" stroke="{LINE}"/>')
     p.append("</svg>")
     return "\n".join(p) + "\n"
 
