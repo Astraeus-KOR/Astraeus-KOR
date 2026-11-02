@@ -37,14 +37,13 @@
 <text x="612" y="193" font-size="13" fill="#9AA2B4" text-anchor="end" class="m">2026-11-02</text>
 <line x1="28" y1="216" x2="612" y2="216" stroke="#24314F"/>
 <text x="28" y="249" font-size="15" font-weight="600" fill="#EEEAE0" class="m">project S</text>
-<text x="196" y="249" font-size="15" font-weight="600" fill="#EEEAE0" text-anchor="end">100</text>
-<rect x="214.0" y="236" width="50.4" height="12" fill="#F6E7C1"/>
-<text x="239.2" y="263" font-size="11" fill="#9AA2B4" text-anchor="middle">18%</text>
-<rect x="264.4" y="236" width="196.0" height="12" fill="#E2C079"/>
-<text x="362.4" y="263" font-size="11" fill="#9AA2B4" text-anchor="middle">70%</text>
-<rect x="460.4" y="236" width="33.6" height="12" fill="#6F86C6"/>
-<text x="477.2" y="263" font-size="11" fill="#9AA2B4" text-anchor="middle">12%</text>
-<text x="612" y="249" font-size="13" fill="#9AA2B4" text-anchor="end" class="m">2026-10-23</text>
+<text x="196" y="249" font-size="15" font-weight="600" fill="#EEEAE0" text-anchor="end">105</text>
+<rect x="214.0" y="236" width="48.0" height="12" fill="#F6E7C1"/>
+<text x="238.0" y="263" font-size="11" fill="#9AA2B4" text-anchor="middle">17%</text>
+<rect x="262.0" y="236" width="200.0" height="12" fill="#E2C079"/>
+<text x="362.0" y="263" font-size="11" fill="#9AA2B4" text-anchor="middle">71%</text>
+<rect x="462.0" y="236" width="32.0" height="12" fill="#6F86C6"/>
+<text x="612" y="249" font-size="13" fill="#9AA2B4" text-anchor="end" class="m">2026-11-02</text>
 <line x1="28" y1="286" x2="612" y2="286" stroke="#24314F"/>
 <text x="28" y="310" font-size="13" font-weight="600" fill="#EEEAE0">By day &amp; time</text>
 <text x="28" y="379" font-size="10" fill="#9AA2B4">Morning</text>
@@ -160,7 +159,8 @@
 <rect x="569.5" y="366.5" width="19" height="17" rx="3" fill="none" stroke="#24314F"/>
 <rect x="592.5" y="366.5" width="19" height="17" rx="3" fill="none" stroke="#24314F"/>
 <rect x="454.5" y="387.5" width="19" height="17" rx="3" fill="none" stroke="#24314F"/>
-<rect x="477.5" y="387.5" width="19" height="17" rx="3" fill="none" stroke="#24314F"/>
+<rect x="477" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.25"/>
+<text x="487" y="399.5" font-size="9" fill="#EEEAE0" text-anchor="middle">5</text>
 <rect x="500" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="1.00"/>
 <text x="510" y="399.5" font-size="9" fill="#0E1629" text-anchor="middle">41</text>
 <rect x="523" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.32"/>
