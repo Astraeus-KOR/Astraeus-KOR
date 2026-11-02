@@ -100,9 +100,9 @@ def svg(rows):
     GX0, step = 96, 179
     for b, (name, _, _, _) in enumerate(BANDS):
         p.append(f'<text x="28" y="{gy + 50 + b * (CH + G) + 13}" font-size="10" fill="{MUTED}">{name}</text>')
-    peak = max(max(max(r) for r in s["grid"]) for _, s in rows) or 1
     for i, (pname, s) in enumerate(rows):
         gx = GX0 + i * step
+        peak = max(max(r) for r in s["grid"]) or 1
         p.append(f'<text x="{gx}" y="{gy + 18}" font-size="11" fill="{MUTED}" class="m">{pname}</text>')
         for d, wd in enumerate(ORDER):
             p.append(f'<text x="{gx + d * (CW + G) + CW / 2:.0f}" y="{gy + 42}" font-size="9" fill="{DAY_COLOR.get(wd, FAINT)}" text-anchor="middle" class="m">{LETTER[wd]}</text>')
