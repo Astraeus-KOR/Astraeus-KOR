@@ -17,13 +17,13 @@
 <text x="612" y="92" font-size="11" fill="#6E7891" text-anchor="end">Last commit</text>
 <line x1="28" y1="104" x2="612" y2="104" stroke="#24314F"/>
 <text x="28" y="137" font-size="15" font-weight="600" fill="#EEEAE0" class="m">project M</text>
-<text x="196" y="137" font-size="15" font-weight="600" fill="#EEEAE0" text-anchor="end">302</text>
-<rect x="214.0" y="124" width="94.6" height="12" fill="#F6E7C1"/>
-<text x="261.3" y="151" font-size="11" fill="#9AA2B4" text-anchor="middle">34%</text>
-<rect x="308.6" y="124" width="77.0" height="12" fill="#E2C079"/>
-<text x="347.0" y="151" font-size="11" fill="#9AA2B4" text-anchor="middle">27%</text>
-<rect x="385.5" y="124" width="108.5" height="12" fill="#6F86C6"/>
-<text x="439.8" y="151" font-size="11" fill="#9AA2B4" text-anchor="middle">39%</text>
+<text x="196" y="137" font-size="15" font-weight="600" fill="#EEEAE0" text-anchor="end">305</text>
+<rect x="214.0" y="124" width="95.5" height="12" fill="#F6E7C1"/>
+<text x="261.7" y="151" font-size="11" fill="#9AA2B4" text-anchor="middle">34%</text>
+<rect x="309.5" y="124" width="77.1" height="12" fill="#E2C079"/>
+<text x="348.0" y="151" font-size="11" fill="#9AA2B4" text-anchor="middle">28%</text>
+<rect x="386.6" y="124" width="107.4" height="12" fill="#6F86C6"/>
+<text x="440.3" y="151" font-size="11" fill="#9AA2B4" text-anchor="middle">38%</text>
 <text x="612" y="137" font-size="13" fill="#9AA2B4" text-anchor="end" class="m">2026-11-14</text>
 <line x1="28" y1="160" x2="612" y2="160" stroke="#24314F"/>
 <text x="28" y="193" font-size="15" font-weight="600" fill="#EEEAE0" class="m">project U</text>
@@ -61,43 +61,43 @@
 <text x="106" y="378.5" font-size="9" fill="#EEEAE0" text-anchor="middle">6</text>
 <rect x="119" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="0.19"/>
 <text x="129" y="378.5" font-size="9" fill="#EEEAE0" text-anchor="middle">2</text>
-<rect x="142" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="0.55"/>
+<rect x="142" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="0.53"/>
 <text x="152" y="378.5" font-size="9" fill="#EEEAE0" text-anchor="middle">18</text>
-<rect x="165" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="0.31"/>
+<rect x="165" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="0.30"/>
 <text x="175" y="378.5" font-size="9" fill="#EEEAE0" text-anchor="middle">7</text>
-<rect x="188" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="0.55"/>
+<rect x="188" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="0.53"/>
 <text x="198" y="378.5" font-size="9" fill="#EEEAE0" text-anchor="middle">18</text>
-<rect x="211" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="0.44"/>
+<rect x="211" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="0.43"/>
 <text x="221" y="378.5" font-size="9" fill="#EEEAE0" text-anchor="middle">13</text>
 <rect x="234" y="366" width="20" height="18" rx="3" fill="#F6E7C1" fill-opacity="1.00"/>
-<text x="244" y="378.5" font-size="9" fill="#0E1629" text-anchor="middle">38</text>
-<rect x="96" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.64"/>
-<text x="106" y="399.5" font-size="9" fill="#0E1629" text-anchor="middle">22</text>
-<rect x="119" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.37"/>
+<text x="244" y="378.5" font-size="9" fill="#0E1629" text-anchor="middle">40</text>
+<rect x="96" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.62"/>
+<text x="106" y="399.5" font-size="9" fill="#EEEAE0" text-anchor="middle">22</text>
+<rect x="119" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.36"/>
 <text x="129" y="399.5" font-size="9" fill="#EEEAE0" text-anchor="middle">10</text>
-<rect x="142" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.46"/>
+<rect x="142" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.45"/>
 <text x="152" y="399.5" font-size="9" fill="#EEEAE0" text-anchor="middle">14</text>
-<rect x="165" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.40"/>
+<rect x="165" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.38"/>
 <text x="175" y="399.5" font-size="9" fill="#EEEAE0" text-anchor="middle">11</text>
-<rect x="188" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.51"/>
+<rect x="188" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.49"/>
 <text x="198" y="399.5" font-size="9" fill="#EEEAE0" text-anchor="middle">16</text>
 <rect x="211" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.26"/>
 <text x="221" y="399.5" font-size="9" fill="#EEEAE0" text-anchor="middle">5</text>
-<rect x="234" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.26"/>
-<text x="244" y="399.5" font-size="9" fill="#EEEAE0" text-anchor="middle">5</text>
-<rect x="96" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.44"/>
+<rect x="234" y="387" width="20" height="18" rx="3" fill="#E2C079" fill-opacity="0.28"/>
+<text x="244" y="399.5" font-size="9" fill="#EEEAE0" text-anchor="middle">6</text>
+<rect x="96" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.43"/>
 <text x="106" y="420.5" font-size="9" fill="#EEEAE0" text-anchor="middle">13</text>
-<rect x="119" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.87"/>
+<rect x="119" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.83"/>
 <text x="129" y="420.5" font-size="9" fill="#0E1629" text-anchor="middle">32</text>
-<rect x="142" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.42"/>
+<rect x="142" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.41"/>
 <text x="152" y="420.5" font-size="9" fill="#EEEAE0" text-anchor="middle">12</text>
-<rect x="165" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.40"/>
+<rect x="165" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.38"/>
 <text x="175" y="420.5" font-size="9" fill="#EEEAE0" text-anchor="middle">11</text>
-<rect x="188" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.87"/>
+<rect x="188" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.83"/>
 <text x="198" y="420.5" font-size="9" fill="#0E1629" text-anchor="middle">32</text>
-<rect x="211" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.35"/>
+<rect x="211" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.34"/>
 <text x="221" y="420.5" font-size="9" fill="#EEEAE0" text-anchor="middle">9</text>
-<rect x="234" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.33"/>
+<rect x="234" y="408" width="20" height="18" rx="3" fill="#6F86C6" fill-opacity="0.32"/>
 <text x="244" y="420.5" font-size="9" fill="#EEEAE0" text-anchor="middle">8</text>
 <text x="275" y="334" font-size="11" fill="#9AA2B4" class="m">project U</text>
 <text x="285" y="358" font-size="9" fill="#E8877C" text-anchor="middle" class="m">S</text>
